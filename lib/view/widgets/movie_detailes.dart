@@ -50,38 +50,6 @@ class MovieDetailes extends StatelessWidget {
                 ),
               ),
             ),
-            Text(
-              "put your rate",
-              style: TextStyle(fontSize: 20),
-            ),
-            Container(
-              width: 70,
-              decoration: BoxDecoration(
-                  color: Colors.blue, borderRadius: BorderRadius.circular(15)),
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 10, left: 10, right: 10),
-                child: TextField(
-                  onChanged: (value) => rateValue = value,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              width: 100,
-              decoration: BoxDecoration(
-                  color: Colors.blue, borderRadius: BorderRadius.circular(15)),
-              child: TextButton(
-                onPressed: () {
-                  RateApi.postRate(int.parse(id),double.parse( rateValue));
-                },
-                child: Text(
-                  "Rate",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-              ),
-            )
           ],
         ),
       ),

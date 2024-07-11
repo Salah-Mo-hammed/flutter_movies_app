@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:get/get.dart';
 import 'package:movie_2nd/models/result.dart';
 import 'package:movie_2nd/utils/api/api_popular.dart';
